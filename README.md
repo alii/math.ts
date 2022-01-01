@@ -10,4 +10,5 @@ table of contents:
 
 - [multiply](./operations/multiply.ts)
 - [subtract](./operations/subtract.ts)
+- [subtract2](./operations/subtract2.ts) (a smaller variation)
 - [add](./operations/add.ts)
