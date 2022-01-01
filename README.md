@@ -10,3 +10,4 @@ table of contents:
 
 - [multiply](./operations/multiply.ts)
 - [subtract](./operations/subtract.ts)
+- [add](./operations/add.ts)
