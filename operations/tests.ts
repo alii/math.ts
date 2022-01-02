@@ -18,3 +18,7 @@ expect<multiply<5, 7>>(35);
 import { divide } from "./divide";
 expect<divide<100, 25>>(4);
 expect<divide<100, 2>>(50);
+
+import { exponent } from "./exponent";
+expect<exponent<2, 3>>(8);
+expect<exponent<2, 4>>(16);

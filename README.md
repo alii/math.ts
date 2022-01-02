@@ -13,3 +13,4 @@ table of contents:
 - [subtract2](./operations/subtract2.ts) (a smaller variation)
 - [add](./operations/add.ts)
 - [divide](./operations/divide.ts)
+- [exponent](./operations/exponent.ts)
