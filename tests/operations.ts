@@ -23,3 +23,10 @@ import {exponent} from '../operations/exponent';
 expect<exponent<2, 3>>(8);
 expect<exponent<2, 4>>(16);
 expect<exponent<2, 5>>(32);
+
+import {modulo} from '../operations/modulo';
+expect<modulo<100, 25>>(0);
+expect<modulo<100, 2>>(0);
+expect<modulo<100, 4>>(0);
+expect<modulo<100, 3>>(1);
+expect<modulo<100, 99>>(1);
