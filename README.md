@@ -14,3 +14,9 @@ table of contents:
 - [add](./operations/add.ts)
 - [divide](./operations/divide.ts)
 - [exponent](./operations/exponent.ts)
+- [modulo](./operations/modulo.ts)
+
+### tests:
+
+- [comparators](./tests/comparators.ts)
+- [operations](./tests/operations.ts)
