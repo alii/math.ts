@@ -7,3 +7,7 @@ export type StrictTupleLength<T> = T extends { length: infer L }
 		? L
 		: never
 	: never;
+
+export type TupleOfLength<T, L extends number, R extends T[] = []> = R["length"] extends L
+	? R
+	: TupleOfLength<T, L, [...R, T]>;
