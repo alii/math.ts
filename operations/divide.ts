@@ -4,8 +4,6 @@
 import type { add } from "./add";
 import type { subtract } from "./subtract";
 
-type divide<
-    A extends number,
-    B extends number,
-    Times extends number = 0
-> = A extends 0 ? Times : divide<subtract<A, B>, B, add<Times, 1>>
+export type divide<A extends number, B extends number, Times extends number = 0> = A extends 0
+	? Times
+	: divide<subtract<A, B>, B, add<Times, 1>>;
