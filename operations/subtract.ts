@@ -1,7 +1,7 @@
 // Playground link:
 // https://www.typescriptlang.org/play?#code/C4TwDgpgBAKgrmANhA8gMwDIQHYHNgAWAPAFBSwA0ZUGUEAHsDgCYDOU2cAtgEYQBOVcgCU6jFuxgBtALpQAvFFkkAfAqjCpAImR5CWuQybY2NKAH4NUAFywEydFj3EYFGm6kA6b8LcwZKgDcJCSgkHZIEAAi-AD2YEQwYsamAAyyaopJRhJKqW7engCW2GgCGhCswHKWwpXANkoywSQMYLH8DWHQrHA8wPwAhgDGwKTkAGJxXMm5nLwCQrCxsybs83yC1KI5a1Dpcln2qJg4+MT5UFOxXCpLAJKrabLqypka2rrnBk+SsdSWe6fM76GTUWy9fpDUZEa5cPyxPzHGLxIjCO5KQr3NypAItbpQfiVOCIBqKSEDEZjACMlwAzEESEA
 
-import { StrictTupleLength, TupleOfLength } from "./utility";
+import {StrictTupleLength, TupleOfLength} from './utility';
 
 type TupleDrop<T extends 0[]> = T extends [0, ...infer Rest] ? Rest : [];
 
@@ -9,5 +9,7 @@ export type subtract<
 	From extends number,
 	To extends number,
 	R extends 0[] = TupleOfLength<0, From>,
-	I extends 0[] = []
-> = R["length"] extends To ? StrictTupleLength<I> : subtract<From, To, TupleDrop<R>, [...I, 0]>;
+	I extends 0[] = [],
+> = R['length'] extends To
+	? StrictTupleLength<I>
+	: subtract<From, To, TupleDrop<R>, [...I, 0]>;
